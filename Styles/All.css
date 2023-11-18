@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Urbanist;
+}
+
+footer {
+    background-color: #202430;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer #circleBoxFB,
+footer #circleBoxIG {
+    width: 50px;
+}
