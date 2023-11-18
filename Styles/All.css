@@ -4,6 +4,27 @@
     font-family: Urbanist;
 }
 
+.ellipsis {
+    margin-top: -0.8rem;
+    background-color: salmon;
+    width: 0.4rem;
+    height: 0.4rem;
+    background-color: #515b6f;
+    border-radius: 0.2rem;
+}
+
+.cat-green {
+    background-color: rgba(86, 205, 173, 0.1);
+    border: 1px solid #56cdad;
+    color: #56cdad;
+}
+
+.cat-yellow {
+    background-color: rgba(255, 184, 54, 0.1);
+    border: 1px solid #ffb836;
+    color: #ffb836;
+}
+
 footer {
     background-color: #202430;
 }
