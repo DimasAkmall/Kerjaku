@@ -1,0 +1,32 @@
+#img2 {
+    width: 340px;
+    height: 132px;
+    background: url(../Asset/image-cp2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#img3 {
+    width: 340px;
+    height: 132px;
+    background: url(../Asset/image-cp3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tech-stack img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+}
+
+.view-back {
+    color: #4640de;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.contact div {
+    margin-right: 1rem;
+    color: #4640de;
+    border: 1px solid #4640de;
+}
