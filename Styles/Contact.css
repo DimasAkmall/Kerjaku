@@ -1,0 +1,27 @@
+body {
+    background-color: #f8f8fd;
+}
+
+.blue {
+    position: relative;
+}
+
+#firstCircle {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.05);
+    position: absolute;
+    bottom: -60px;
+    right: -60px;
+    z-index: 1;
+}
+
+#secondCircle {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    bottom: 60px;
+    right: 60px;
+    z-index: 3;
+}
