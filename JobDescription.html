@@ -46,24 +46,79 @@
         <section class="container pb-5">
             <div class="row d-flex justify-content-center">
                 <div class="col-10 border rounded-0 p-1 my-5">
-                    <a href="./CompanyProfile.html" class="w-100 d-flex flex-wrap text-decoration-none text-black justify-content-center">
+                    <div class="w-100 d-flex flex-wrap justify-content-center">
                         <img src="./Asset/stripe.png" alt="" width="100" class="col-12 col-lg-1" />
                         <div class="ms-3">
-                            <p class="fw-semibold fs-2">Social Media Assistant</p>
-                            <div class="d-flex align-items-center">
-                                <p class="lh-1">Stripe</p>
-                                <div class="ellipsis mx-2"></div>
-                                <p class="lh-1">San Francisco, US</p>
-                                <div class="ellipsis mx-2"></div>
-                                <p class="lh-1">Full-Time</p>
-                            </div>
+                            <a href="./CompanyProfile.html" class="text-decoration-none text-black"
+                                ><p class="fw-semibold fs-2">Social Media Assistant</p>
+                                <div class="d-flex align-items-center">
+                                    <p class="lh-1">Stripe</p>
+                                    <div class="ellipsis mx-2"></div>
+                                    <p class="lh-1">San Francisco, US</p>
+                                    <div class="ellipsis mx-2"></div>
+                                    <p class="lh-1">Full-Time</p>
+                                </div>
+                            </a>
                         </div>
                         <div class="d-flex align-items-center ms-md-auto me-3">
                             <img src="./Asset/icon-share.png" alt="" width="40" class="me-3" />
-                            <button type="button" class="btn btn-primary rounded-0 px-5 ms-3">Apply</button>
+                            <button type="button" class="btn btn-primary rounded-0 px-5 ms-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Apply</button>
                         </div>
-                    </a>
+                    </div>
                 </div>
+
+                <!-- PopUp Apply JobDesc -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content rounded-0 border-0">
+                            <div class="position-absolute top-0 end-0 my-1">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-header my-2">
+                                <div class="w-100 d-flex flex-wrap">
+                                    <img src="./Asset/stripe.png" alt="" width="120" class="col-12 col-lg-3" />
+                                    <div class="mx-3">
+                                        <p class="fw-semibold fs-4">Social Media Assistant</p>
+                                        <div class="d-flex align-items-center">
+                                            <p class="lh-1">Stripe</p>
+                                            <div class="ellipsis mx-2"></div>
+                                            <p class="lh-1">San Francisco, US</p>
+                                            <div class="ellipsis mx-2"></div>
+                                            <p class="lh-1">Full-Time</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-body">
+                                <p class="fw-semibold fs-4">Submit your application</p>
+                                <p class="lh-1">The following is required and will only be shared with Nomad</p>
+                                <div class="mb-2">
+                                    <label for="Name" class="form-label fw-semibold lh-1">Full name</label>
+                                    <input type="text" class="form-control py-2" id="name" aria-describedby="Name" placeholder="Enter your fullname" />
+                                </div>
+                                <div class="mb-2">
+                                    <label for="exampleInputEmail1" class="form-label fw-semibold lh-1">Email address</label>
+                                    <input type="email" class="form-control py-2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address" />
+                                </div>
+                                <div class="mb-2">
+                                    <label for="phoneNumber" class="form-label fw-semibold lh-1">Phone number</label>
+                                    <input type="tel" class="form-control py-2" id="phoneNumber" aria-describedby="phoneNumber" placeholder="Enter your phone number" />
+                                </div>
+                                <div class="mb-2">
+                                    <label for="jobTitle" class="form-label fw-semibold lh-1">Current of previous job title</label>
+                                    <input type="text" class="form-control py-2" id="name" aria-describedby="jobTitle" placeholder="What’s your current or previous job title?" />
+                                </div>
+                                <div class="mb-2">
+                                    <label for="exampleInputEmail1" class="form-label fw-semibold lh-1">Additional information</label>
+                                    <textarea class="form-control" placeholder="Add a cover letter or anything else you want to share" id="aboutMe" style="height: 120px"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary text-center fw-semibold lh-1 w-100 py-3 rounded-0">Submit Application</button>
+                                <p class="py-2">By sending the request you can confirm that you accept our <a href="" style="color: blue" class="text-decoration-none">Terms of Service</a> and <a href="" style="color: blue" class="text-decoration-none">Privacy Policy</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="col-10 mb-3">
                     <p class="fw-semibold fs-4">Description</p>
                     <p>Stripe is looking for Social Media Marketing expert to help manage our online networks. You will be responsible for monitoring our social media channels, creating content, finding effective ways to engage the community and incentivize others to engage on our channels.</p>
