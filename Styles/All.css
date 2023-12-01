@@ -46,3 +46,13 @@ footer #circleBoxIG {
     height: 1px;
     background: #eee;
 }
+
+.user-profile {
+    width: 35px;
+    height: 35px;
+    background-image: url(../Asset/User-Profile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 100%;
+}

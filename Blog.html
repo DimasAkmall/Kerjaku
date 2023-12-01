@@ -38,17 +38,38 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ms-auto">
-                        <a class="nav-link active me-3" href="./Home.html">Home</a>
+                        <a class="nav-link me-3" href="./Home.html">Home</a>
                         <a class="nav-link me-3" href="./Find-job.html">Find job</a>
-                        <a class="nav-link me-3" href="./Blog.html">Blog</a>
-                        <a class="nav-link me-3" href="./History.html">History</a>
-                        <div class="d-flex mb-3 mb-md-0">
+                        <a class="nav-link active me-3" href="./Blog.html">Blog</a>
+                        <a class="nav-link me-3 disabled" href="./History.html">History</a>
+                        <div class="BUTTON d-flex mb-3 mb-md-0">
                             <a href="./Login.html">
                                 <button type="button" class="btn btn-primary rounded-0 border bg-white text-black px-4">Log in</button>
                             </a>
                             <a href="./Signup.html">
                                 <button type="button" class="btn btn-primary rounded-0 px-4">Sign up</button>
                             </a>
+                        </div>
+                        <div class="USER d-mb-flex flex-row align-items-center mb-3 mb-md-0 p-0 d-none dropdown">
+                            <a class="btn btn-secondary dropdown-toggle d-flex flex-row align-items-center bg-white text-black border-0 p-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="user-profile my-0 me-2"></div>
+                                <p class="fw-semibold me-2 mb-0" id="username">User1234</p>
+                            </a>
+
+                            <ul class="dropdown-menu dropdown-menu-end mt-3">
+                                <li class="d-flex align-items-center">
+                                    <a class="dropdown-item fw-semibold fs-6" href="./Profil.html"><img src="./Asset/user.png" alt="" class="me-2" width="20" /> Profile</a>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <a class="dropdown-item fw-semibold fs-6" href="./Bookmark.html"><img src="./Asset/bookmark-black.png" alt="" class="me-2" width="22" /> Bookmark</a>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <a class="dropdown-item fw-semibold fs-6" href="#"><img src="./Asset/settings.png" alt="" class="me-2" width="20" /> Setting</a>
+                                </li>
+                                <li>
+                                    <button class="dropdown-item text-danger" id="logout"><img src="./Asset/log-out.png" alt="" class="me-2" width="25" />Log out</button>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -286,6 +307,7 @@
             </div>
         </footer>
 
+        <script src="./App.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </body>
 </html>

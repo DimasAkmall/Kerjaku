@@ -30,20 +30,20 @@
       
             
                            <div class="login-form">
-                            <form>
+                            <form id="form-signup">
                               <div class="mb-3">
                                 <label for="exampleInputFLName" class="form-label fw-semibold fs-5">Fullname</label>
-                                <input type="text" class="form-control py-2" id="exampleInputFLName" aria-describedby="emailHelp" placeholder="Your Name">
+                                <input type="text" class="form-control py-2" id="exampleInputFLName" aria-describedby="emailHelp" placeholder="Your Name" name="name2">
                               </div>
                                 <div class="mb-3">
-                                  <label for="exampleInputEmail1" class="form-label fw-semibold fs-5">Email</label>
-                                  <input type="email" class="form-control py-2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Email">
+                                  <label for="exampleInputEmail2" class="form-label fw-semibold fs-5">Email</label>
+                                  <input type="email" class="form-control py-2" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="Your Email" name="email2">
                                 </div>
                                 <div class="mb-3">
-                                  <label for="exampleInputPassword1" class="form-label fw-semibold fs-5">Password</label>
-                                  <input type="password" class="form-control py-2" id="exampleInputPassword1" placeholder="Your Password">
+                                  <label for="exampleInputPassword2" class="form-label fw-semibold fs-5">Password</label>
+                                  <input type="password" class="form-control py-2" id="exampleInputPassword2" placeholder="Your Password" name="password2">
                                 </div>
-                                <button type="submit" class="btn btn-primary text-center fw-semibold fs-5 w-100 py-2"> Sign up </button>
+                                <button type="submit" class="btn btn-primary text-center fw-semibold fs-5 w-100 py-2" id="signupBtn"> Sign up </button>
             
                                  <div class="divider d-flex align-items-center my-4">
                                     <p class="text-center fw-bold mx-2 mb-0 text-muted">OR</p>
@@ -55,7 +55,7 @@
                                 </button>
                                   <p class="text-center fw-semibold fs-5 mt-4">
                                     Have an account? 
-                                    <a href="" class="Signup d-inline text-decoration-none">Sign in
+                                    <a href="./Login.html" class="Signup d-inline text-decoration-none">Sign in
                                     </a>
                                   </p>
                             </form>
@@ -65,5 +65,29 @@
            </div>
         </div>
       </section>
+
+      <script src="./App.js"></script>
+      <script>
+            var signup = 0;
+            var signup_form = document.getElementById("form-signup")
+            var signupBtn = document.getElementById("signupBtn")
+
+            signupBtn.addEventListener("click", function () {
+                var nm = signup_form.name2.value
+                var em = signup_form.email2.value
+                var pw = signup_form.password2.value
+
+                console.log(nm)
+                console.log(em)
+                console.log(pw)
+
+                if (em != ""){ 
+                  alert("signed up success")
+                  localStorage.setItem("name",nm)
+                  localStorage.setItem("email",em)
+                  localStorage.setItem("password",pw)
+                }
+            })
+      </script>
     </body>
 </html>

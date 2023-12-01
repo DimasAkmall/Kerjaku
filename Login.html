@@ -31,16 +31,16 @@
           
                 
                                <div class="login-form">
-                                <form>
+                                <form id="form-login">
                                     <div class="mb-3">
                                       <label for="exampleInputEmail1" class="form-label fw-semibold fs-5">Email</label>
-                                      <input type="email" class="form-control py-2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Email">
+                                      <input type="email" class="form-control py-2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Email" name="email1">
                                     </div>
                                     <div class="mb-3">
                                       <label for="exampleInputPassword1" class="form-label fw-semibold fs-5">Password</label>
-                                      <input type="password" class="form-control  py-2" id="exampleInputPassword1" placeholder="Your Password">
+                                      <input type="password" class="form-control  py-2" id="exampleInputPassword1" placeholder="Your Password" name="password1">
                                     </div>
-                                    <button type="submit" class="btn btn-primary text-center fw-semibold fs-5 w-100 py-2"> Login </button>
+                                    <button type="submit" class="btn btn-primary text-center fw-semibold fs-5 w-100 py-2" id="loginBtn"> Login </button>
                 
                                      <div class="divider d-flex align-items-center my-4">
                                         <p class="text-center fw-bold mx-3 mb-0 text-muted">OR</p>
@@ -52,7 +52,7 @@
                                     </button>
                                       <p class="text-center fw-semibold fs-5 mt-5">
                                         Don’t have an account? 
-                                        <a href="" class="Signup d-inline text-decoration-none">Sign up
+                                        <a href="./Signup.html" class="Signup d-inline text-decoration-none">Sign up
                                         </a>
                                       </p>
                                 </form>
@@ -62,5 +62,32 @@
                </div>
             </div>
           </section>
+
+          <script src="./App.js"></script>
+
+          <script>
+            var logcheck = 0
+            var login_form = document.getElementById("form-login")
+            var loginBtn = document.getElementById("loginBtn")
+
+            loginBtn.addEventListener("click", function () {
+                var em = login_form.email1.value
+                var pw = login_form.password1.value
+
+                console.log(em)
+                console.log(pw)
+                console.log(localStorage.getItem("email"));
+                console.log(localStorage.getItem("password"));
+
+                if (em == localStorage.getItem("email") && pw == localStorage.getItem("password")){
+                    alert("You have successfully logged in.")
+                    localStorage.setItem("logcheck", 1)
+                } else {
+                    alert("You have failed to logged in.")
+                }
+            })
+
+          </script>
+
     </body>
 </html>
